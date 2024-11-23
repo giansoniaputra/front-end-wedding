@@ -1,0 +1,211 @@
+.atas {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bawah {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* #navigation {
+  position: absolute;
+}
+#nav-top {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+}
+#nav-bot {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+} */
+:root {
+  --animate-duration: 2s;
+}
+#text-wanita-1,
+#text-wanita-2,
+#text-wanita-3,
+#text-wanita-4,
+#text-wanita-5,
+#text-wanita-6,
+#text-pria-1,
+#text-pria-2,
+#text-pria-3,
+#text-pria-4,
+#text-pria-5,
+#text-pria-6 {
+  display: none;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* atau tinggi sesuai kebutuhan */
+}
+#container,
+#container2,
+#story,
+#mempelai-wanita,
+#mempelai-pria,
+#container-rap,
+#container-rap-2,
+#container-rap-3,
+#container-rap-5,
+#container-rap-4 {
+  position: absolute;
+  width: 730px;
+  max-width: 100%; /* Batas maksimum lebar pada layar kecil */
+  height: 100vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#container {
+  /* position: absolute; */
+  z-index: 30;
+}
+#container-rap {
+  z-index: 29;
+}
+#container2 {
+  /* position: absolute; */
+  z-index: 28;
+}
+#container-rap-2 {
+  z-index: 27;
+}
+#container-rap-3 {
+  z-index: 26;
+}
+#container-rap-4 {
+  z-index: 26;
+}
+#container-rap-5 {
+  z-index: 26;
+}
+#mempelai-wanita {
+  z-index: 26;
+}
+#mempelai-pria {
+  z-index: 26;
+}
+#story {
+  /* position: absolute; */
+  z-index: 26;
+}
+@media (max-width: 768px) {
+  #container,
+  #container2,
+  #story {
+    width: 100%; /* Sesuaikan lebar dengan layar kecil */
+    height: auto; /* Atur ulang jika diperlukan */
+  }
+}
+.buble {
+  max-width: 720px;
+}
+#container #landing {
+  height: 100vh;
+  color: white;
+  /* background-color: brown; */
+}
+#landing .judul {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+}
+
+#landing .invited {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+/* SLIDE 2 */
+#waktu {
+  height: 100vh;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.tanggal {
+  padding-top: 20px;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+.opening {
+  padding-bottom: 55px;
+  height: 80vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#mempelai-wanita,
+#mempelai-pria,
+#story {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 0 50px 30px;
+}
+#container-rap-4 {
+  margin-top: 100vh;
+}
+#container-rap-5 {
+  margin-top: 200vh;
+}
+#mempelai-pria {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 0 50px 30px;
+  margin-top: 100vh;
+}
+#story {
+  display: flex;
+  padding: 50px 20px;
+  margin-top: 200vh;
+}
+#our-story {
+  height: 90vh;
+  align-items: center;
+  overflow-y: scroll;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  padding: 10px;
+  /* margin-bottom: 120vh; */
+}
+#save-day {
+  margin-top: 30vh;
+  margin-bottom: 20vh;
+}
+#akad-resepsi {
+  margin-top: 50vh;
+  margin-bottom: 20vh;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.gallery-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5px;
+  margin-top: 10px;
+}
